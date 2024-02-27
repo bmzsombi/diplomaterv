@@ -1,1 +1,1 @@
-# diplomaterv
+# Diplomaterv
