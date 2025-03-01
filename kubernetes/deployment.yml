@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: faucet
+  namespace: faucet
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: faucet
+  template:
+    metadata:
+      labels:
+        app: faucet
+    spec:
+      containers:
+        - name: faucet
+          image: docker.io/faucet/faucet:latest
+          resources:
+            limits:
+              cpu: "1"
+              memory: "512Mi"
+          ports:
+            - containerPort: 6653
+            - containerPort: 9302
+          volumeMounts:
+            - name:  faucet-config
+              mountPath: /etc/faucet
+        - name: gauge
+          image: docker.io/faucet/gauge:latest
+          resources:
+            limits:
+              cpu: "1"
+              memory: "512Mi"
+          ports:
+            - containerPort: 6654
+            - containerPort: 9303
+      volumes:
+        - name: faucet-config
+          hostPath:
+            path:  /home/cloud/diplomaterv/configuration/faucet
+            type: Directory
+

@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  faucet-openflow
+  namespace: faucet
+spec:
+  selector:
+    app: faucet
+  type:  LoadBalancer
+  ports:
+  - name:  openflow
+    port:  6553
+    targetPort:  6553
