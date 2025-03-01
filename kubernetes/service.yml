@@ -3,6 +3,8 @@ apiVersion: v1
 metadata:
   name:  faucet-openflow
   namespace: faucet
+  annotations:
+    metallb.universe.tf/loadBalancerIPs: 192.168.1.100
 spec:
   selector:
     app: faucet
