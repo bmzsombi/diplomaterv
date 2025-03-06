@@ -18,8 +18,8 @@ spec:
           image: docker.io/faucet/faucet:latest
           resources:
             limits:
-              cpu: "1"
-              memory: "512Mi"
+              cpu: "50m"
+              memory: "100Mi"
           ports:
             - containerPort: 6653
             - containerPort: 9302
@@ -30,8 +30,8 @@ spec:
           image: docker.io/faucet/gauge:latest
           resources:
             limits:
-              cpu: "1"
-              memory: "512Mi"
+              cpu: "50m"
+              memory: "100Mi"
           ports:
             - containerPort: 6654
             - containerPort: 9303
