@@ -4,12 +4,12 @@ routers:
 vlans:
     vlan100:
         vid: 100
-        faucet_vips: ["10.0.0.254/24"]  # Faucet's virtual IP address for vlan100
-        faucet_mac: "00:00:00:00:00:11"
+        #faucet_vips: ["10.0.0.254/24"]  # Faucet's virtual IP address for vlan100
+        #faucet_mac: "00:00:00:00:00:11"
     vlan200:
         vid: 200
-        faucet_vips: ["10.0.1.254/24"]  # Faucet's virtual IP address for vlan200
-        faucet_mac: "00:00:00:00:00:22"
+        #faucet_vips: ["10.0.1.254/24"]  # Faucet's virtual IP address for vlan200
+        #faucet_mac: "00:00:00:00:00:22"
 dps:
     sw1:
         dp_id: 0x1
