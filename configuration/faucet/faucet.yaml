@@ -1,6 +1,6 @@
 routers:
     router-1:                           # Router name
-        vlans: [vlan100, vlan200]s
+        vlans: [vlan100, vlan200]
 vlans:
     vlan100:
         vid: 100
