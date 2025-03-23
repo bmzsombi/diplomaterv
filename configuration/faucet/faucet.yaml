@@ -1,6 +1,3 @@
-routers:
-    router-1:                           # Router name
-        vlans: [vlan100, vlan200]
 vlans:
     vlan100:
         vid: 100
@@ -23,3 +20,6 @@ dps:
                 name: "host2"
                 description: "host2 network namespace"
                 native_vlan: vlan200
+routers:
+    router-1:                           # Router name
+        vlans: [vlan100, vlan200]       # Names of vlans to allow routing between

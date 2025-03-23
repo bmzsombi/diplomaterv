@@ -11,5 +11,5 @@ spec:
   type:  LoadBalancer
   ports:
   - name:  openflow
-    port:  6553
-    targetPort:  6553
+    port:  6653
+    targetPort:  6653
