@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: faucet
   namespace: faucet
+  labels:
+    app: faucet
 spec:
   replicas: 1
   selector:
