@@ -9,7 +9,7 @@ vlans:
         faucet_mac: "00:00:00:00:00:22"
     vlan300:
         vid: 300
-        faucet_vips: ["192.168.10.127"]             # Faucet's virtual IP address for vlan300
+        faucet_vips: ["192.168.10.126/26"]             # Faucet's virtual IP address for vlan300
         faucet_mac: "00:00:00:00:00:33"
 dps:
     sw1:
