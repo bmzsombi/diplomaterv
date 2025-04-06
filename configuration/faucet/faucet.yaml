@@ -1,12 +1,16 @@
 vlans:
     vlan100:
         vid: 100
-        faucet_vips: ["10.0.0.254/24"]  # Faucet's virtual IP address for vlan100
+        faucet_vips: ["10.0.0.254/24"]              # Faucet's virtual IP address for vlan100
         faucet_mac: "00:00:00:00:00:11"
     vlan200:
         vid: 200
-        faucet_vips: ["10.0.1.254/24"]  # Faucet's virtual IP address for vlan200
+        faucet_vips: ["10.0.1.254/24"]              # Faucet's virtual IP address for vlan200
         faucet_mac: "00:00:00:00:00:22"
+    vlan300:
+        vid: 300
+        faucet_vips: ["192.168.10.127"]             # Faucet's virtual IP address for vlan300
+        faucet_mac: "00:00:00:00:00:33"
 dps:
     sw1:
         dp_id: 0x1
@@ -20,6 +24,19 @@ dps:
                 name: "host2"
                 description: "host2 network namespace"
                 native_vlan: vlan200
+            3:
+                name:  "frr"
+                description: "bgp network namespace"
+                native_vlan: vlan300
 routers:
-    router-1:                           # Router name
-        vlans: [vlan100, vlan200]       # Names of vlans to allow routing between
+    router-1:                                       # Router name
+        vlans: [vlan100, vlan200]                   # Names of vlans to allow routing between
+    frr:
+        bgp:
+            vlan: servers                           # The VLAN faucet use for BGP
+            as: 65000                               # Faucet's AS number
+            port: 9179                              # BGP port for Faucet to listen on.
+            routerid: '192.168.10.65'               # Faucet's Unique ID.
+            server_addresses: ['192.168.10.65']     # Faucet's listen IP for BGP
+            neighbor_addresses: ['192.168.10.70']   # Neighbouring IP addresses (IPv4/IPv6)
+            neighbor_as: 65001                      # Neighbour's AS number

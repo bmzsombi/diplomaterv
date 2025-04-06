@@ -25,6 +25,7 @@ spec:
           ports:
             - containerPort: 6653
             - containerPort: 9302
+            - containerPort: 9179
           volumeMounts:
             - name:  faucet-config
               mountPath: /etc/faucet
