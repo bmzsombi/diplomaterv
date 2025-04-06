@@ -33,7 +33,7 @@ routers:
         vlans: [vlan100, vlan200, vlan300]                   # Names of vlans to allow routing between
     frr:
         bgp:
-            vlan: servers                           # The VLAN faucet use for BGP
+            vlan: vlan300                           # The VLAN faucet use for BGP
             as: 65000                               # Faucet's AS number
             port: 9179                              # BGP port for Faucet to listen on.
             routerid: '192.168.10.65'               # Faucet's Unique ID.
