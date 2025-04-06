@@ -29,5 +29,6 @@ sudo ovs-vsctl add-br br0 \
 -- set bridge br0 fail_mode=secure \
 -- add-port br0 veth-host1 -- set interface veth-host1 ofport_request=1 \
 -- add-port br0 veth-host2 -- set interface veth-host2 ofport_request=2 \
--- add-port br0 veth-frr -- set interface veth-frr ofport_request=3 \
 -- set-controller br0 tcp:192.168.10.65:6653
+
+# -- add-port br0 veth-frr -- set interface veth-frr ofport_request=3 \
