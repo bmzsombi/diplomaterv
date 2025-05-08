@@ -28,6 +28,7 @@ dps:
                 name:  "frr"
                 description: "bgp network namespace"
                 native_vlan: vlan300
+
 routers:
     router-1:                                       # Router name
         vlans: [vlan100, vlan200, vlan300]                   # Names of vlans to allow routing between

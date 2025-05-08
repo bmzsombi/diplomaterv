@@ -4,7 +4,7 @@ metadata:
   name:  bgp-lb
   namespace: faucet
   # annotations:
-    # metallb.universe.tf/loadBalancerIPs: 192.168.1.100
+    # metallb.universe.tf/loadBalancerIPs: 192.168.1.67
 spec:
   selector:
     app: faucet
