@@ -38,6 +38,6 @@ routers:
             as: 65000                               # Faucet's AS number
             port: 9179                              # BGP port for Faucet to listen on.
             routerid: '192.168.10.69'               # Faucet's Unique ID.
-            server_addresses: ['192.168.10.69']     # Faucet's listen IP for BGP
+            # server_addresses: ['0.0.0.0']     # Faucet's listen IP for BGP
             neighbor_addresses: ['192.168.10.80']   # Neighbouring IP addresses (IPv4/IPv6)
             neighbor_as: 65001                      # Neighbour's AS number
