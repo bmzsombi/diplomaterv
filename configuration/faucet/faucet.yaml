@@ -31,13 +31,13 @@ dps:
 
 routers:
     router-1:                                       # Router name
-        vlans: [vlan100, vlan200, vlan300]                   # Names of vlans to allow routing between
+        vlans: [vlan100, vlan200, vlan300]          # Names of vlans to allow routing between
     frr:
         bgp:
             vlan: vlan300                           # The VLAN faucet use for BGP
             as: 65000                               # Faucet's AS number
             port: 9179                              # BGP port for Faucet to listen on.
             routerid: '192.168.100.4'               # Faucet's Unique ID.
-            server_addresses: ['192.168.100.4']     # Faucet's listen IP for BGP
+            server_addresses: ['0.0.0.0']           # Faucet's listen IP for BGP
             neighbor_addresses: ['192.168.10.70']   # Neighbouring IP addresses (IPv4/IPv6)
             neighbor_as: 65001                      # Neighbour's AS number
