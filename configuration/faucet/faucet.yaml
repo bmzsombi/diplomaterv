@@ -37,7 +37,7 @@ routers:
             vlan: vlan300                           # The VLAN faucet use for BGP
             as: 65000                               # Faucet's AS number
             port: 9179                              # BGP port for Faucet to listen on.
-            routerid: '192.168.10.65'               # Faucet's Unique ID.
-            server_addresses: ['192.168.10.65']     # Faucet's listen IP for BGP
+            routerid: '192.168.100.4'               # Faucet's Unique ID.
+            server_addresses: ['192.168.100.4']     # Faucet's listen IP for BGP
             neighbor_addresses: ['192.168.10.70']   # Neighbouring IP addresses (IPv4/IPv6)
             neighbor_as: 65001                      # Neighbour's AS number
