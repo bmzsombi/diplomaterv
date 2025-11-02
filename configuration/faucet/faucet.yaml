@@ -9,7 +9,7 @@ vlans:
         faucet_mac: "00:00:00:00:00:22"
     vlan300:
         vid: 300
-        faucet_vips: ["192.168.10.126/26"]          # Faucet's virtual IP address for vlan300
+        faucet_vips: ["192.168.10.254/24"]          # Faucet's virtual IP address for vlan300
         faucet_mac: "00:00:00:00:00:33"
 dps:
     sw1:
@@ -31,7 +31,7 @@ dps:
 
 routers:
     router-1:                                       # Router name
-        vlans: [vlan100, vlan200, vlan300]                   # Names of vlans to allow routing between
+        vlans: [vlan100, vlan200, vlan300]          # Names of vlans to allow routing between
     frr:
         bgp:
             vlan: vlan300                           # The VLAN faucet use for BGP

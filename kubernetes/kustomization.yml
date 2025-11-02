@@ -3,7 +3,7 @@ kind: Kustomization
 metadata:
   namespace: faucet
 resources:
-  # - namespace.yml
+  - namespace.yml
   - deployment.yml
   - service.yml
   - clusterip.yml

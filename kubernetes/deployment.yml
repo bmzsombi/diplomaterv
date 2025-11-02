@@ -6,6 +6,7 @@ metadata:
   labels:
     app: faucet
 spec:
+  revisionHistoryLimit: 1
   replicas: 1
   selector:
     matchLabels:
@@ -27,7 +28,7 @@ spec:
             - containerPort: 9302
             - containerPort: 9179
           volumeMounts:
-            - name:  faucet-config
+            - name: faucet-config
               mountPath: /etc/faucet
         - name: gauge
           image: docker.io/faucet/gauge:latest
@@ -41,5 +42,7 @@ spec:
       volumes:
         - name: faucet-config
           hostPath:
-            path:  /home/zsombor/diplomaterv/configuration/faucet
+            path: /home/zsombor/diplomaterv/configuration/faucet
             type: Directory
+      nodeSelector:
+        custom-label: "k3s-2-node"

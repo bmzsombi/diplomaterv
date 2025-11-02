@@ -1,0 +1,90 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  labels:
+    app: faucet
+  name: faucet
+  namespace: faucet
+spec:
+  selector:
+    matchLabels:
+      app: faucet
+  template:
+    metadata:
+      labels:
+        app: faucet
+    spec:
+      # *** HOZZÁADOTT RÉSZ A NODE SZINTŰ HÁLÓZATI KOMMUNIKÁCIÓHOZ ***
+      hostNetwork: true 
+      # ***************************************************************
+      containers:
+      - args:
+        - |
+          echo "Generating faucet.yaml with Pod IP: $POD_IP"
+          # A '0.0.0.0'-t cseréljük a Pod IP-címére.
+          # A /etc/faucet-template/faucet.yaml a hostPath-ról jön.
+          # A /etc/faucet/faucet.yaml az emptyDir-be kerül.
+          sed "s/0.0.0.0/$POD_IP/g" /etc/faucet-template/faucet.yaml > /etc/faucet/faucet.yaml
+          echo "Config generated, starting Faucet..."
+          # Ellenőrizd, hogy tényleg ez-e a Faucet indító parancsa (valószínűleg igen)
+          exec /usr/local/bin/faucet
+        command:
+        - /bin/sh
+        - -c
+        env:
+        - name: POD_IP
+          valueFrom:
+            fieldRef:
+              apiVersion: v1
+              fieldPath: status.podIP
+        image: docker.io/faucet/faucet:latest
+        imagePullPolicy: Always
+        name: faucet
+        ports:
+        # A hostNetwork: true miatt ezek a portok a Node-on nyílnak meg
+        - containerPort: 6653
+          protocol: TCP
+        - containerPort: 9302
+          protocol: TCP
+        - containerPort: 9179
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 50m
+            memory: 100Mi
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /etc/faucet-template
+          name: faucet-config-template
+          readOnly: true
+        - mountPath: /etc/faucet
+          name: faucet-config-runtime
+      - image: docker.io/faucet/gauge:latest
+        imagePullPolicy: Always
+        name: gauge
+        ports:
+        - containerPort: 6654
+          protocol: TCP
+        - containerPort: 9303
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 50m
+            memory: 100Mi
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - hostPath:
+          path: /home/zsombor/diplomaterv/configuration/faucet
+          type: Directory
+        name: faucet-config-template
+      - emptyDir: {}
+        name: faucet-config-runtime
+  updateStrategy:
+    type: RollingUpdate
