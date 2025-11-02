@@ -30,7 +30,7 @@ sudo ovs-vsctl add-br br0 \
 -- add-port br0 veth-host1 -- set interface veth-host1 ofport_request=1 \
 -- add-port br0 veth-host2 -- set interface veth-host2 ofport_request=2 \
 -- add-port br0 veth-frr -- set interface veth-frr ofport_request=3 \
--- set-controller br0 tcp:192.168.10.65:6653
+-- set-controller br0 tcp:192.168.100.5:6653
 
 as_ns host1 ip route add default via 10.0.0.254 dev veth0
 as_ns host2 ip route add default via 10.0.1.254 dev veth0
