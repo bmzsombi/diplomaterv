@@ -15,29 +15,27 @@ spec:
         app: faucet
     spec:
       terminationGracePeriodSeconds: 30
-      nodeSelector:
-        kubernetes.io/hostname: k3s-2
       tolerations:
       - key: "node.cilium.io/agent-not-ready"
         operator: "Exists"
         effect: "NoSchedule"
-      - key: "node.kubernetes.io/not-ready" # Javasolt hozzáadni ezt is, ha általános hiba van
+      - key: "node.kubernetes.io/not-ready"
         operator: "Exists"
         effect: "NoExecute"
-      - key: "node.kubernetes.io/unreachable" # És ezt is
+      - key: "node.kubernetes.io/unreachable"
         operator: "Exists"
         effect: "NoExecute"
       hostNetwork: true 
       containers:
       - args:
         - |
+          # Ez a parancs marad, de a fájl már a ConfigMap-ből van beolvasva
           echo "Generating faucet.yaml with Pod IP: $POD_IP"
-          # A '0.0.0.0'-t cseréljük a Pod IP-címére.
-          # A /etc/faucet-template/faucet.yaml a hostPath-ról jön.
-          # A /etc/faucet/faucet.yaml az emptyDir-be kerül.
+          # A /etc/faucet-template/faucet.yaml most már a ConfigMap-ből jön.
+          # Mivel a ConfigMap-ből csatolva a fájl neve megegyezik a kulccsal (faucet.yaml),
+          # nem kell módosítani a fájl útvonalát.
           sed "s/0.0.0.0/$POD_IP/g" /etc/faucet-template/faucet.yaml > /etc/faucet/faucet.yaml
           echo "Config generated, starting Faucet..."
-          # Ellenőrizd, hogy tényleg ez-e a Faucet indító parancsa (valószínűleg igen)
           exec /usr/local/bin/faucet
         command:
         - /bin/sh
@@ -54,8 +52,6 @@ spec:
         ports:
         - containerPort: 6653
           protocol: TCP
-        # - containerPort: 9302
-        #   protocol: TCP
         - containerPort: 9179
           protocol: TCP
         resources:
@@ -76,8 +72,6 @@ spec:
         ports:
         - containerPort: 6654
           protocol: TCP
-        # - containerPort: 9303
-        #   protocol: TCP
         resources:
           limits:
             cpu: 50m
@@ -89,10 +83,12 @@ spec:
       schedulerName: default-scheduler
       securityContext: {}
       volumes:
-      - hostPath:
-          path: /home/zsombor/diplomaterv/configuration/faucet
-          type: Directory
-        name: faucet-config-template
+      - name: faucet-config-template
+        configMap:
+          name: faucet-config
+          items:
+          - key: faucet.yaml
+            path: faucet.yaml
       - emptyDir: {}
         name: faucet-config-runtime
   updateStrategy:
