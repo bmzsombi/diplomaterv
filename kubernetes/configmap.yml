@@ -40,7 +40,7 @@ data:
           vlans: [vlan100, vlan200, vlan300]
         frr:
             bgp:
-                vlan: vlan300, vlan200
+                vlan: vlan300
                 as: 65000
                 port: 9179
                 routerid: '0.0.0.0'
