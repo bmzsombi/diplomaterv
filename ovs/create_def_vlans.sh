@@ -34,3 +34,5 @@ sudo ovs-vsctl add-br br0 \
 as_ns host1 ip route add default via 10.0.0.254 dev veth0
 as_ns host2 ip route add default via 10.0.1.254 dev veth0
 as_ns frr ip route add default via 192.168.10.126 dev veth0
+
+# sudo ovs-vsctl set-fail-mode br0 secure

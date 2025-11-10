@@ -40,10 +40,10 @@ data:
           vlans: [vlan100, vlan200, vlan300]
         frr:
             bgp:
-                vlan: vlan300
+                vlan: vlan300, vlan200
                 as: 65000
                 port: 9179
-                routerid: '192.168.100.4'
-                server_addresses: ['0.0.0.0'] # Ezt cseréli le a Pod IP-re
+                routerid: '0.0.0.0'
+                server_addresses: ['0.0.0.0']
                 neighbor_addresses: ['192.168.1.29']
                 neighbor_as: 65001
