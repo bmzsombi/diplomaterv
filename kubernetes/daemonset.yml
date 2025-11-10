@@ -14,6 +14,8 @@ spec:
       labels:
         app: faucet
     spec:
+      # nodeSelector:
+      #   kubernetes.io/hostname: "k3s-2"
       terminationGracePeriodSeconds: 30
       tolerations:
       - key: "node.cilium.io/agent-not-ready"
