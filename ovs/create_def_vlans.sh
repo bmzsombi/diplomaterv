@@ -23,7 +23,7 @@ create_ns host1 10.0.0.1/24
 create_ns host2 10.0.1.2/24
 create_ns frr 192.168.10.70/24
 
-sudo ip link add dev veth-default type veth peer name veth0-default-peer
+sudo ip link add dev veth-default type veth
 sudo ip link set dev veth-default up
 sudo ip link set dev veth0-default-peer up
 sudo ip addr add dev veth-default 192.168.10.100/24
