@@ -36,6 +36,8 @@ cleanup () {
     sudo ovs-vsctl --if-exists del-br br1
     sudo ovs-vsctl --if-exists del-br br2
     sudo ovs-vsctl --if-exists del-br br3
+    sudo ip link del dev veth-default type veth
+
 }
 
 cleanup
