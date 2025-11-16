@@ -28,6 +28,10 @@ dps:
                 name:  "frr"
                 description: "bgp network namespace"
                 native_vlan: vlan300
+            4:
+                name: "bgp"
+                description: "bgp router peer"
+                native_vlan: vlan300
 
 routers:
     router-1:                                       # Router name
