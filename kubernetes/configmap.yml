@@ -18,6 +18,10 @@ data:
             vid: 300
             faucet_vips: ["192.168.10.126/26"]
             faucet_mac: "00:00:00:00:00:33"
+        peering_vlan:
+            vid: 400
+            faucet_vips: ["192.168.1.1/24"]
+            faucet_mac: "00:00:00:00:00:44"
     dps:
         sw1:
             dp_id: 0x1
@@ -41,10 +45,10 @@ data:
                     native_vlan: vlan300
     routers:
         router-1:
-          vlans: [vlan100, vlan200, vlan300]
+            vlans: [vlan300,vlan200,vlan100,peering_vlan]
         frr:
             bgp:
-                vlan: vlan300
+                vlan: peering_vlan
                 as: 65000
                 port: 9179
                 routerid: '0.0.0.0'
