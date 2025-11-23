@@ -24,6 +24,11 @@ create_ns host2 10.0.1.2/24
 create_ns frr 192.168.10.70/24
 as_ns frr ip address add 192.0.2.1/24 dev veth0
 
+sudo ip link add dev veth-default type veth peer name veth-pair
+sudo ip link set dev veth-default up
+sudo ip link set dev veth-pair up
+sudo ip addr add dev veth-default 192.168.10.100/24
+
 sudo ovs-vsctl add-br br0 \
 -- set bridge br0 other-config:datapath-id=0000000000000001 \
 -- set bridge br0 other-config:disable-in-band=true \
@@ -31,6 +36,7 @@ sudo ovs-vsctl add-br br0 \
 -- add-port br0 veth-host1 -- set interface veth-host1 ofport_request=1 \
 -- add-port br0 veth-host2 -- set interface veth-host2 ofport_request=2 \
 -- add-port br0 veth-frr -- set interface veth-frr ofport_request=3 \
+-- add-port br0 veth-pair -- set interface veth-pair ofport_request=4 \
 -- set-controller br0 tcp:192.168.1.201:6653 tcp:192.168.1.240:6653
 
 as_ns host1 ip route add default via 10.0.0.254 dev veth0
