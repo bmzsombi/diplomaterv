@@ -2,3 +2,6 @@ bgp interface címének foglalása
 szcenáriók - több kontroller, több switch, több vlan bgp-n?, leállás, topológia változás, túlterhelés????
 hibák átgondolása!!!
 leállításnál HA vagy fault-tolerant?
+
+bgp-nek nem jó a proxy-zás, nat-olás
+openvswitch role-ok: miért? - faucet stateless ezért nem baj

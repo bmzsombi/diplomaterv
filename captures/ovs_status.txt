@@ -1,0 +1,10 @@
+$ sudo ovs-vsctl --columns=target,role,status,is_connected list controller
+target              : "tcp:192.168.1.240:6653"
+role                : other
+status              : {last_error="Connection refused", sec_since_connect="647", sec_since_disconnect="657", state=ACTIVE}
+is_connected        : true
+
+target              : "tcp:192.168.1.201:6653"
+role                : []
+status              : {last_error="Connection refused", sec_since_connect="691", sec_since_disconnect="1", state=BACKOFF}
+is_connected        : false

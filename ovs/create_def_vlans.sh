@@ -22,11 +22,7 @@ create_ns () {
 create_ns host1 10.0.0.1/24
 create_ns host2 10.0.1.2/24
 create_ns frr 192.168.10.70/24
-
-sudo ip link add dev veth-default type veth peer name veth-pair
-sudo ip link set dev veth-default up
-sudo ip link set dev veth-pair up
-sudo ip addr add dev veth-default 192.168.10.100/24
+as_ns frr ip address add 192.0.2.1/24 dev veth0
 
 sudo ovs-vsctl add-br br0 \
 -- set bridge br0 other-config:datapath-id=0000000000000001 \
