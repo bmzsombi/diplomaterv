@@ -5,3 +5,9 @@ leállításnál HA vagy fault-tolerant?
 
 bgp-nek nem jó a proxy-zás, nat-olás
 openvswitch role-ok: miért? - faucet stateless ezért nem baj
+faucet korlátai -- nem tud, csak a routing vlan netjeit hirdetni
+faucet-en belül eszköz bővítés - hogyan történik?
+belső bővítés - külső neten static példa --> meg lehet automatizálni -> értékelése
+mi van ha elvesszük a subnetet -> nem éri el
+load-balance nincs -> mindkát controller aktív ekkor mi van?
+ping kiértékelése -> diagram
