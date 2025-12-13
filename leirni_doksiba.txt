@@ -6,3 +6,6 @@ leállításnál HA vagy fault-tolerant?
 bgp-nek nem jó a proxy-zás, nat-olás
 openvswitch role-ok: miért? - faucet stateless ezért nem baj
 bgp miatt a router-t rá kell kötni a switchre, különben nem hirdet, mert nem ismeri a next hop-ot
+
+grafikonok a késleltetésről
+rajzok a proxmoxon belüli kommunikációról

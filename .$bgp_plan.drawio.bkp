@@ -1,0 +1,190 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="1 oldal" id="Ux4dVU2-8lWvtaHYB6Io">
+    <mxGraphModel dx="1722" dy="1001" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FoovaJogKC-DzIDbLMUB-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="200" width="670" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Proxmox&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="200" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="630" width="130" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="260" width="130" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="360" width="370" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-6" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=node" vertex="1" parent="1">
+          <mxGeometry x="280" y="802" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-7" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=node" vertex="1" parent="1">
+          <mxGeometry x="280" y="260" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="350" width="70" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-9" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=ds" vertex="1" parent="1">
+          <mxGeometry x="180" y="520" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-10" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=pod" vertex="1" parent="1">
+          <mxGeometry x="240" y="710" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-11" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=pod" vertex="1" parent="1">
+          <mxGeometry x="240" y="366" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-12" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;VM&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-13" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;VM&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="820" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-14" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;VM&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="360" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-17" value="" style="shape=mxgraph.cisco.routers.router;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="491" y="660" width="78" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-20" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="416" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-21" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="514" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-22" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="612" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-23" value="Host 1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="416" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-24" value="Host 2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="516" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-25" value="Host 3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="612" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-26" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fillColor=#60a917;strokeColor=#2D7600;exitX=1;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="FoovaJogKC-DzIDbLMUB-39" target="FoovaJogKC-DzIDbLMUB-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="490" as="sourcePoint" />
+            <mxPoint x="630" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-27" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#1ba1e2;strokeColor=#006EAF;exitX=0.98;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="FoovaJogKC-DzIDbLMUB-39" target="FoovaJogKC-DzIDbLMUB-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="544" as="sourcePoint" />
+            <mxPoint x="640" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-28" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.87;exitY=0.74;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=#e3c800;strokeColor=#B09500;" edge="1" parent="1" source="FoovaJogKC-DzIDbLMUB-39" target="FoovaJogKC-DzIDbLMUB-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="600" as="sourcePoint" />
+            <mxPoint x="640" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-29" value="" style="endArrow=none;html=1;rounded=0;fillColor=#1ba1e2;strokeColor=#006EAF;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="894.5" as="sourcePoint" />
+            <mxPoint x="660" y="894.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-30" value="" style="endArrow=none;html=1;rounded=0;fillColor=#e3c800;strokeColor=#B09500;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="924.5" as="sourcePoint" />
+            <mxPoint x="660" y="924.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-31" value="" style="endArrow=none;html=1;rounded=0;fillColor=#60a917;strokeColor=#2D7600;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="864.5" as="sourcePoint" />
+            <mxPoint x="660" y="864.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-32" value="VLAN 100" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="850" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-33" value="VLAN 200" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="880" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-34" value="VLAN 300" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="910" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-39" value="" style="shape=mxgraph.cisco.switches.workgroup_switch;sketch=0;html=1;pointerEvents=1;dashed=0;fillColor=#036897;strokeColor=#ffffff;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="491" y="520" width="101" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-40" value="OVS" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="544" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-41" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#e3c800;strokeColor=#B09500;entryPerimeter=0;" edge="1" parent="1" target="FoovaJogKC-DzIDbLMUB-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="570" as="sourcePoint" />
+            <mxPoint x="621" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-42" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#e3c800;strokeColor=#B09500;entryPerimeter=0;exitX=1.012;exitY=0.881;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="FoovaJogKC-DzIDbLMUB-4" target="FoovaJogKC-DzIDbLMUB-39">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="418" as="sourcePoint" />
+            <mxPoint x="610" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-43" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fillColor=#e3c800;strokeColor=#B09500;exitX=0;exitY=0.98;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="FoovaJogKC-DzIDbLMUB-39" target="FoovaJogKC-DzIDbLMUB-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="630" as="sourcePoint" />
+            <mxPoint x="550" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-44" value="" style="endArrow=none;html=1;rounded=0;entryX=0.995;entryY=0.63;entryDx=0;entryDy=0;exitX=0.16;exitY=0.23;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;fillColor=#6a00ff;strokeColor=#3700CC;" edge="1" parent="1" source="FoovaJogKC-DzIDbLMUB-39" target="FoovaJogKC-DzIDbLMUB-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="460" as="sourcePoint" />
+            <mxPoint x="530" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-45" value="" style="endArrow=none;html=1;rounded=0;entryX=0.995;entryY=0.63;entryDx=0;entryDy=0;exitX=0.167;exitY=0.867;exitDx=0;exitDy=0;entryPerimeter=0;fillColor=#6a00ff;strokeColor=#3700CC;exitPerimeter=0;" edge="1" parent="1" source="FoovaJogKC-DzIDbLMUB-40" target="FoovaJogKC-DzIDbLMUB-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="696" y="663" as="sourcePoint" />
+            <mxPoint x="520" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-48" value="" style="endArrow=none;html=1;rounded=0;fillColor=#6a00ff;strokeColor=#3700CC;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="834.66" as="sourcePoint" />
+            <mxPoint x="660" y="834.66" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-49" value="Openflow" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="820" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-52" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="653.4" as="sourcePoint" />
+            <mxPoint x="400" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-53" value="BGP" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="610" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-54" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.007;entryY=0.408;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="476" as="sourcePoint" />
+            <mxPoint x="402.59000000000015" y="509.1999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-55" value="BGP" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="490" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-56" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="650" as="sourcePoint" />
+            <mxPoint x="550" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FoovaJogKC-DzIDbLMUB-57" value="BGP" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="612" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
